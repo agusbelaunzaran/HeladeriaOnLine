@@ -2,6 +2,7 @@ const productos = [
     { 
         id: 1,
         nombre: "combo 1",
+        descripcion:"helados",
         precio: 1000,
         img: src="../assets/img/combo1.jpg",
         cantidad: 1,
@@ -9,6 +10,7 @@ const productos = [
     { 
         id: 2,
         nombre: "combo 2",
+        descripcion:"helados",
         precio: 400,
         img: src="../assets/img/combo2.jpg",
         cantidad: 1,
@@ -16,6 +18,7 @@ const productos = [
     { 
         id: 3,
         nombre: "combo 3",
+        descripcion:"helados",
         precio: 700,
         img: src="../assets/img/combo3.jpg",
         cantidad: 1,
@@ -23,6 +26,7 @@ const productos = [
     {   
         id: 4,
         nombre: "combo 4",
+        descripcion:"helados",
         precio: 200,
         img: src="../assets/img/combo 4.jpg",
         cantidad: 1,
@@ -30,6 +34,7 @@ const productos = [
     {  
         id: 5,
         nombre: "combo 5",
+        descripcion:"helados",
         precio: 4000,
         img: src="../assets/img/combo5.jpg",
         cantidad: 1,
@@ -37,6 +42,7 @@ const productos = [
     { 
         id: 6,
         nombre: "combo 6",
+        descripcion:"helados",
         precio: 800,
         img: src="../assets/img/combo6.jpg",
         cantidad: 1,
