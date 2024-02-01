@@ -42,3 +42,7 @@ const productos = [
         cantidad: 1,
     },
 ];
+
+fetch ("/data/productos.json")
+.then (resp=> resp.json())
+.then (data=> console.log(data)) 
