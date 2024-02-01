@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helados Rita | Disfruta mas, paga menos</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/sweetalert2">
 </head>
 <body>
     <div class="nav-container">
@@ -25,13 +26,17 @@
         <div class="caja">Productos destacados!</div>
     </div>
     
+    
 
-    <div id ="heladosContent" class="helados-content"></div>
+    <div id ="heladosContent" class="helados-content"> </div>
 
     <div id ="modal-container" class="modal-container"></div>
+
+    <button id="btnConfirmarPedido" class="btn-confirmar"> Confirmar pedido!</button>
 
     <script src="./js/productos.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/carrito.js"></script>
+    <script src="./node_modules/sweetalert2"></script>
 </body>
 </html>

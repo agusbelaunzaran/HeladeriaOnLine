@@ -4,7 +4,7 @@ const iluminarCarrito = () =>{
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header";
     modalHeader.innerHTML = `
-        <h1 class="modal-header-title">Tu compra:</h1>
+        <h2 class="modal-header-title">Tu pedido:</h2>
     `;
     modalContainer.append(modalHeader);
 
@@ -56,7 +56,6 @@ const iluminarCarrito = () =>{
         eliminarProducto(product.id);
     });
 
-
     });
 
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
@@ -65,6 +64,30 @@ const iluminarCarrito = () =>{
     totalCompra.clasName = "total-content"
     totalCompra.innerHTML=`Total a pagar: ${total} $`;
     modalContainer.append(totalCompra);
+
+
+    const btnConfirmarPedido = document.getElementById("btnConfirmarPedido");
+
+btnConfirmarPedido.addEventListener("click", () => {
+   
+    Swal.fire({
+        title: 'Confirmar Pedido',
+        text: '¿Estás seguro de que deseas confirmar el pedido?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#4CAF50',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: "Compra exitosa",
+                icon:"success",
+            })
+        }
+    });
+});
+  modalContainer.append(btnConfirmarPedido);
 };
 
 verCarrito.addEventListener("click", iluminarCarrito);
@@ -89,5 +112,7 @@ const carritoContador = () => {
 
     cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
 };
+ 
+
 
 carritoContador()

@@ -17,8 +17,8 @@ productos.forEach((product)=> {
     heladosContent.append(content);
 
     let comprar = document.createElement("button");
-    comprar.innerText = "Agregar al carrito!";
-    comprar.className = "Agregar al carrito!";
+    comprar.innerText = "Agregar al carrito";
+    comprar.className = "comprar";
 
     content.append(comprar);
 

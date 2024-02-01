@@ -73,6 +73,17 @@ body {
   line-height: 80%;
   
 }
+ .btn-confirmar{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: palevioletred;
+  color: #0c0c0c;
+  border:#0c0c0c;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .helados-content{
   display: flex;
@@ -115,18 +126,18 @@ body {
 }
 
 .modal-container {
-  width: 40%;
+  width: 30%;
   margin: 0 10%;
   max-height: 88vh;
   color: #fff;
-  background-color: #121212;
+  background-color: #0c0c0c;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
   overflow: auto;
   z-index: 9;
-  top: 12vh;
+  top:12vh;
   scrollbar-color: none;
 }
 
@@ -137,7 +148,7 @@ body {
 .modal-header {
   display: flex;
   justify-content: space-around;
-  background-color: #0a0909;
+  background-color: #37382f;
   color: #fff;
   width: 100%;
 }
@@ -153,7 +164,7 @@ body {
 .modal-container > .modal-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
   width: 70%;
   margin: 10px;
@@ -162,6 +173,7 @@ body {
 .modal-container > div > img {
   height: 60px;
   width: 60px;
+  padding: 15px;
 }
 
 .total-content {
@@ -189,4 +201,5 @@ body {
 
 .sumar, .restar {
   cursor: pointer;
+  padding: 3px;
 }
